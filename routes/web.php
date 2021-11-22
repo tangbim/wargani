@@ -20,4 +20,4 @@ Route::get('/', function () {
 Route::get('/posts', function () {
     return view('welcome');
 });
-//zei menambah
+//zei menambahmbah
