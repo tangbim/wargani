@@ -1,5 +1,5 @@
 <?php
-//sample view until frontend ready, in progress
+//sample view until frontend ready, in progress, hehe
 ?>
 <article>
     <h1 class="mb-5">{{ $article->title }}</h1>
