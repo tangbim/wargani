@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ArticleController::class, 'index']);
 
-Route::get('/posts', function () {
-    return view('welcome');
-});
-//zei menambahmbah
+Route::get('article/{post:slug}', [ArticleController::class, 'show']);
