@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Comment;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
-use App\Http\Controllers\Controller;
 
 class ArticleController extends Controller
 {
@@ -14,7 +15,7 @@ class ArticleController extends Controller
     {
         return view('articles', [
             "title" => "Articles",
-            "articles" => Article::all()
+            "articles" => Article::all(),
         ]);
     }
 
@@ -22,7 +23,8 @@ class ArticleController extends Controller
     {
         return view('article', [
             "title" => "Single Article",
-            "article" => $article
+            "article" => $article,
+            "comments" => $article->comments
         ]);
     }
 

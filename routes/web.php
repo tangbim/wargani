@@ -4,6 +4,8 @@ use App\Models\Category;
 use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,17 +22,6 @@ Route::get('/', [ArticleController::class, 'index']);
 
 Route::get('article/{article:slug}', [ArticleController::class, 'show']);
 
-Route::get('/categories/{category:slug}', function (Category $category) {
-    return view('category', [
-        'title' => $category->name,
-        'articles' => $category->articles,
-        'category' => $category->name
-    ]);
-});
+Route::get('/categories', [CategoryController::class, 'index']);
 
-Route::get('/categories', function () {
-    return view('categories', [
-        'title' => 'Article Categories',
-        'categories' => Category::all()
-    ]);
-});
+Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);

@@ -9,4 +9,14 @@
     {!! $article->body !!}
 </article>
 
+<h2>KOMENTAR</h2>
+@foreach ($comments as $comment)
+<article class="mb-5">
+    <h3>
+        {{ $comment["name"] }}
+    </h3>
+    <p>{{$comment->body}}</p>
+</article>
+@endforeach
+
 <a href="/">Back to Home</a>
