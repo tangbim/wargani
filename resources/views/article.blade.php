@@ -4,7 +4,7 @@
 <article>
     <h1 class="mb-5">{{ $article->title }}</h1>
 
-    <p>By: Lintang Bima in Sepak Bola</a></p>
+    <p>By: Lintang Bima in <a href="/categories/{{$article->category->slug}}">{{$article->category->name}}</a></p>
 
     {!! $article->body !!}
 </article>
