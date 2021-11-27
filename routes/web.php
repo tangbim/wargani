@@ -1,11 +1,12 @@
 <?php
 
-use App\Models\Category;
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,7 @@ Route::get('article/{article:slug}', [ArticleController::class, 'show']);
 Route::get('/categories', [CategoryController::class, 'index']);
 
 Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
+
+Route::get('/login', [UserController::class, 'login']);
+
+Route::get('/signup', [UserController::class, 'signup']);

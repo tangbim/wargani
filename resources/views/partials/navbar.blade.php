@@ -31,13 +31,17 @@
         margin-left: 200px;
     }
 
+    .signup:hover {
+        background-color: #00C99C !important;
+    }
+
     .login {
         background-color: #00C99C;
         border: none;
     }
 
     .login:hover {
-        background-color: #00C95C;
+        background-color: #00C98C;
     }
 
     .logintext:hover {
@@ -98,13 +102,13 @@
                     <a class="nav-link{{($title === 'Account')? 'active' : ''}}" href="#">Akun</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-outline-light rounded-pill signup" type="submit">
-                        <a href="#" class="link-light" id="signup">Sign Up</a>
+                    <button class="btn btn-outline-light rounded-pill signup" type="submit" onclick="location.href='/signup'">
+                        <a href="/signup" class="link-light" id="signup">Sign Up</a>
                     </button>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-outline-light rounded-pill login" type="submit">
-                        <a href="#" class="logintext" id="login">Login</a>
+                    <button class="btn btn-outline-light rounded-pill login" type="submit" onclick="location.href='/login'">
+                        <a href="/login" class="logintext" id="login">Login</a>
                     </button>
                 </li>
             </ul>
