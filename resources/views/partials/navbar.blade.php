@@ -7,7 +7,7 @@
 
     .nav-link {
         font-family: 'Poppins';
-        font-size: 18px;
+        font-size: 20px;
         color: white !important;
     }
 
@@ -26,6 +26,59 @@
     .container {
         margin-top: 40px !important;
     }
+
+    .signup {
+        margin-left: 200px;
+    }
+
+    .login {
+        background-color: #00C99C;
+        border: none;
+    }
+
+    .login:hover {
+        background-color: #00C95C;
+    }
+
+    .logintext:hover {
+        color: white;
+    }
+
+    .logintext {
+        text-decoration: none;
+        font-family: 'Poppins';
+        color: white;
+    }
+
+    .btn {
+        width: 140px;
+        height: 50px;
+    }
+
+    .link-light {
+        text-decoration: none !important;
+        font-family: 'Poppins';
+    }
+
+    .link-light::after {
+        content: "";
+        position: absolute;
+        background-color: #00C95C;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+
+    .link-light:hover:after {
+        width: 100%;
+    }
+
+    .active {
+        color: #00C99C !important;
+        font-weight: bold;
+    }
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
@@ -36,13 +89,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Beranda</a>
+                    <a class="nav-link {{($title === 'Articles')? 'active' : ''}}" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Berita</a>
+                    <a class="nav-link {{($title === 'Article Categories')? 'active' : ''}}" href="/categories">Kategori</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Akun</a>
+                    <a class="nav-link{{($title === 'Account')? 'active' : ''}}" href="#">Akun</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light rounded-pill signup" type="submit">
+                        <a href="#" class="link-light" id="signup">Sign Up</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light rounded-pill login" type="submit">
+                        <a href="#" class="logintext" id="login">Login</a>
+                    </button>
                 </li>
             </ul>
         </div>

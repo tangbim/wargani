@@ -1,22 +1,26 @@
-<?php
-//sample view until frontend ready, in progress, hehe
-?>
-<article>
-    <h1 class="mb-5">{{ $article->title }}</h1>
+@extends('layouts.main')
 
-    <p>By: Lintang Bima in <a href="/categories/{{$article->category->slug}}">{{$article->category->name}}</a></p>
+@section('container')
 
-    {!! $article->body !!}
-</article>
+<body style="background-color: black;">
+    <article>
+        <h1 class="mb-5">{{ $article->title }}</h1>
 
-<h2>KOMENTAR</h2>
-@foreach ($comments as $comment)
-<article class="mb-5">
-    <h3>
-        {{ $comment["name"] }}
-    </h3>
-    <p>{{$comment->body}}</p>
-</article>
-@endforeach
+        <p>By: Lintang Bima in <a href="/categories/{{$article->category->slug}}">{{$article->category->name}}</a></p>
 
-<a href="/">Back to Home</a>
+        {!! $article->body !!}
+    </article>
+
+    <h2>KOMENTAR</h2>
+    @foreach ($comments as $comment)
+    <article class="mb-5">
+        <h3>
+            {{ $comment["name"] }}
+        </h3>
+        <p>{{$comment->body}}</p>
+    </article>
+    @endforeach
+
+    <a href="/">Back to Home</a>
+</body>
+@endsection
