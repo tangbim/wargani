@@ -25,8 +25,8 @@
     <img src="{{URL::asset('/image/logo.png')}}" style="width: 250px; padding-top: 122px;" alt="" />
     <div class="container text-center" style="width: 600px">
         <div class="row">
-            <a href="/" class="col {{($title === 'Account')? 'active' : ''}}">Beranda</a>
-            <a href="/categories" class="col {{($title === 'Account')? 'active' : ''}}">Kategori</a>
+            <a href="/" class="col {{($title === 'Articles')? 'active' : ''}}">Beranda</a>
+            <a href="/categories" class="col {{($title === 'Article Categores')? 'active' : ''}}">Kategori</a>
             <a href="#" class="col mb-4 {{($title === 'Account')? 'active' : ''}}"> Akun</a>
         </div>
     </div>

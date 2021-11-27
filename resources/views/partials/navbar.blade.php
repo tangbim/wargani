@@ -7,7 +7,7 @@
 
     .nav-link {
         font-family: 'Poppins';
-        font-size: 20px;
+        font-size: 18px;
         color: white !important;
     }
 
@@ -19,16 +19,12 @@
         padding: 20px;
     }
 
-    .logo {
-        margin-left: -40px;
-    }
-
     .container {
         margin-top: 40px !important;
     }
 
     .signup {
-        margin-left: 200px;
+        margin-left: 260px;
     }
 
     .signup:hover {
@@ -99,7 +95,7 @@
                     <a class="nav-link {{($title === 'Article Categories')? 'active' : ''}}" href="/categories">Kategori</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link{{($title === 'Account')? 'active' : ''}}" href="#">Akun</a>
+                    <a class="nav-link {{($title === 'Account')? 'active' : ''}}" href="/account">Akun</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-outline-light rounded-pill signup" type="submit" onclick="location.href='/signup'">

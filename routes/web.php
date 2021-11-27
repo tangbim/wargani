@@ -30,3 +30,6 @@ Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 Route::get('/login', [UserController::class, 'login']);
 
 Route::get('/signup', [UserController::class, 'signup']);
+
+//apply slug on account so not trackable
+Route::get('/account', [UserController::class, 'account']);

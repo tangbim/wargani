@@ -25,4 +25,12 @@ class UserController extends Controller
             //masih kosong yakkk
         ]);
     }
+
+    public function account()
+    {
+        return view('account', [
+            "title" => "Account",
+            //masih kosong yakkk
+        ]);
+    }
 }
