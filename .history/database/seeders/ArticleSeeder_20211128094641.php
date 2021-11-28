@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Article;
 use Illuminate\Database\Seeder;
 
 class ArticleSeeder extends Seeder
@@ -36,6 +35,5 @@ class ArticleSeeder extends Seeder
                 'updated_at' => now()
             ]
         ];
-        Article::insert($post1);
     }
 }
