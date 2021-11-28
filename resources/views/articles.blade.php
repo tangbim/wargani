@@ -16,8 +16,9 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
                         <a href="article/{{ $articles[0]->slug }}">
-                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100"alt="...">
-                        </a>                        <div class="carousel-caption d-none d-md-block">
+                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
                             <div class="px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">
                                 <h3>{{ $articles[0]->title }}</h3>
                                 <p>{{ $articles[0]->excerpt }}</p>
@@ -26,8 +27,9 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
                         <a href="article/{{ $articles[1]->slug }}">
-                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100"alt="...">
-                        </a>                        <div class="carousel-caption d-none d-md-block">
+                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
                             <div class="px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">
                                 <h3>{{ $articles[1]->title }}</h3>
                                 <p>{{ $articles[1]->excerpt }}</p>
@@ -36,7 +38,7 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
                         <a href="article/{{ $articles[2]->slug }}">
-                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100"alt="...">
+                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100" alt="...">
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <div class="px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">

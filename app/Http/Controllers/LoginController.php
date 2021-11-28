@@ -7,27 +7,15 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
 
-class LoginController extends Controller
-{
+class LoginController extends Controller {
 
-    public function login()
-    {
+    public function login() {
         return view('login.login', [
-            "title" => "login",
-            //masih kosong yakk
+            "title" => "Login",
+
         ]);
     }
-
-    public function signup()
-    {
-        return view('login.signup', [
-            "title" => "signup",
-            //masih kosong yakkk
-        ]);
-    }
-
-    public function account()
-    {
+    public function account() {
         return view('account', [
             "title" => "Account",
             //masih kosong yakkk

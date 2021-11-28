@@ -63,7 +63,7 @@
     }
 
     @media (min-width: 768px) {
-        .nav-item{
+        .nav-item {
             padding: 20px;
         }
     }
@@ -71,30 +71,35 @@
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand"> <img src="{{URL::asset('/image/logo.png')}}" alt="logo" width="250px" height="113px" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand"> <img src="{{ URL::asset('/image/logo.png') }}" alt="logo" width="250px"
+                height="113px" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{($title === 'Articles')? 'active' : ''}}" href="/">Home</a>
+                    <a class="nav-link {{ $title === 'Articles' ? 'active' : '' }}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{($title === 'Article Categories')? 'active' : ''}}" href="/categories">Categories</a>
+                    <a class="nav-link {{ $title === 'Article Categories' ? 'active' : '' }}"
+                        href="/categories">Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{($title === 'Account')? 'active' : ''}}" href="/account">Profile</a>
+                    <a class="nav-link {{ $title === 'Account' ? 'active' : '' }}" href="/account">Profile</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item">
-                    <button class="btn btn-outline-light rounded-pill signup" type="submit" onclick="location.href='/signup'">
-                        <a href="/signup" class="link-light" id="signup">Sign Up</a>
+                    <button class="btn btn-outline-light rounded-pill signup" type="submit"
+                        onclick="location.href='/signup'">
+                        <a href="/register" class="link-light" id="signup">Sign Up</a>
                     </button>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-outline-light rounded-pill login" type="submit" onclick="location.href='/login'">
+                    <button class="btn btn-outline-light rounded-pill login" type="submit"
+                        onclick="location.href='/login'">
                         <a href="/login" class="link-light" id="login">Login</a>
                     </button>
                 </li>

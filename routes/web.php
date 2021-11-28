@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,8 @@ Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 
 Route::get('/login', [LoginController::class, 'login']);
 
-Route::get('/signup', [LoginController::class, 'signup']);
+Route::get('/register', [RegisterController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'store']);
 
 //apply slug on account so not trackable
 Route::get('/account', [LoginController::class, 'account']);
