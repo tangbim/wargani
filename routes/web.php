@@ -1,9 +1,7 @@
 <?php
 
-use App\Models\Article;
-use App\Models\Category;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\CategoryController;
@@ -27,9 +25,9 @@ Route::get('/categories', [CategoryController::class, 'index']);
 
 Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/login', [LoginController::class, 'login']);
 
-Route::get('/signup', [UserController::class, 'signup']);
+Route::get('/signup', [LoginController::class, 'signup']);
 
 //apply slug on account so not trackable
-Route::get('/account', [UserController::class, 'account']);
+Route::get('/account', [LoginController::class, 'account']);

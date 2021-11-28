@@ -1,4 +1,3 @@
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <style>
     .navbar-dark {
         background: black;
@@ -21,10 +20,6 @@
 
     .container {
         margin-top: 40px !important;
-    }
-
-    .signup {
-        margin-left: 260px;
     }
 
     .signup:hover {
@@ -97,6 +92,8 @@
                 <li class="nav-item">
                     <a class="nav-link {{($title === 'Account')? 'active' : ''}}" href="/account">Akun</a>
                 </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <button class="btn btn-outline-light rounded-pill signup" type="submit" onclick="location.href='/signup'">
                         <a href="/signup" class="link-light" id="signup">Sign Up</a>

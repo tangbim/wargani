@@ -7,12 +7,12 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
 
-class UserController extends Controller
+class LoginController extends Controller
 {
 
     public function login()
     {
-        return view('login', [
+        return view('login.login', [
             "title" => "login",
             //masih kosong yakk
         ]);
@@ -20,7 +20,7 @@ class UserController extends Controller
 
     public function signup()
     {
-        return view('signup', [
+        return view('login.signup', [
             "title" => "signup",
             //masih kosong yakkk
         ]);
