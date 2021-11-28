@@ -23,7 +23,6 @@
     }
 
     .signup {
-        margin-left: 260px;
         width: 140px;
         height: 50px;
     }
