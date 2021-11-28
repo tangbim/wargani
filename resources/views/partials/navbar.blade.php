@@ -25,6 +25,8 @@
 
     .signup {
         margin-left: 260px;
+        width: 140px;
+        height: 50px;
     }
 
     .signup:hover {
@@ -34,6 +36,8 @@
     .login {
         background-color: #00C99C;
         border: none;
+        width: 140px;
+        height: 50px;
     }
 
     .login:hover {
@@ -50,11 +54,6 @@
         color: white;
     }
 
-    .btn {
-        width: 140px;
-        height: 50px;
-    }
-
     .link-light {
         text-decoration: none !important;
         font-family: 'Poppins';
@@ -63,7 +62,6 @@
     .link-light::after {
         content: "";
         position: absolute;
-        background-color: #00C95C;
         height: 3px;
         width: 0;
         left: 0;
@@ -89,13 +87,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{($title === 'Articles')? 'active' : ''}}" href="/">Beranda</a>
+                    <a class="nav-link {{($title === 'Articles')? 'active' : ''}}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{($title === 'Article Categories')? 'active' : ''}}" href="/categories">Kategori</a>
+                    <a class="nav-link {{($title === 'Article Categories')? 'active' : ''}}" href="/categories">Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{($title === 'Account')? 'active' : ''}}" href="/account">Akun</a>
+                    <a class="nav-link {{($title === 'Account')? 'active' : ''}}" href="/account">Profile</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-outline-light rounded-pill signup" type="submit" onclick="location.href='/signup'">
@@ -104,7 +102,7 @@
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-outline-light rounded-pill login" type="submit" onclick="location.href='/login'">
-                        <a href="/login" class="logintext" id="login">Login</a>
+                        <a href="/login" class="link-light" id="login">Login</a>
                     </button>
                 </li>
             </ul>
