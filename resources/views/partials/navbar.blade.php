@@ -32,10 +32,10 @@
     }
 
     .login {
-        background-color: #00C99C;
-        border: none;
         width: 140px;
         height: 50px;
+        background-color: #00C99C;
+        border: none;
     }
 
     .login:hover {
@@ -57,27 +57,13 @@
         font-family: 'Poppins';
     }
 
-    .link-light::after {
-        content: "";
-        position: absolute;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: -10px;
-        transition: 0.3s;
-    }
-
-    .link-light:hover:after {
-        width: 100%;
-    }
-
     .active {
         color: #00C99C !important;
         font-weight: bold;
     }
 </style>
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
         <a class="navbar-brand"> <img src="{{URL::asset('/image/logo.png')}}" alt="logo" width="300px" height="113px" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
