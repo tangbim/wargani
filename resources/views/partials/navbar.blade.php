@@ -1,8 +1,8 @@
 <style>
-    .navbar-dark {
+    /* .navbar-dark {
         background: black;
         height: 120px;
-    }
+    } */
 
     .nav-link {
         font-family: 'Poppins';
@@ -15,12 +15,12 @@
     }
 
     .nav-item {
-        padding: 20px;
+        padding: 5px;
     }
 
-    .container {
+    /* .container {
         margin-top: 40px !important;
-    }
+    } */
 
     .signup {
         width: 140px;
@@ -61,10 +61,17 @@
         color: #00C99C !important;
         font-weight: bold;
     }
+
+    @media (min-width: 768px) {
+        .nav-item{
+            padding: 20px;
+        }
+    }
+
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand"> <img src="{{URL::asset('/image/logo.png')}}" alt="logo" width="300px" height="113px" class="logo"></a>
+        <a class="navbar-brand"> <img src="{{URL::asset('/image/logo.png')}}" alt="logo" width="250px" height="113px" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -80,7 +87,7 @@
                     <a class="nav-link {{($title === 'Account')? 'active' : ''}}" href="/account">Profile</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item">
                     <button class="btn btn-outline-light rounded-pill signup" type="submit" onclick="location.href='/signup'">
                         <a href="/signup" class="link-light" id="signup">Sign Up</a>
