@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="position-absolute top-120 start-50 translate-middle mt-4">
-        <hr style="color: white; height: 3px; size: 10px; width: 100vw" />
+        <hr style="color: white; height: 3px; size: 10px; width: 99vw" />
     </div>
     <p style="text-align: center; color: white; margin-top: 80px; font-family:'Poppins'">Wargani</p>
 </section>
