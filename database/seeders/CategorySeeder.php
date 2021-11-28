@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class CategorySeeder extends Seeder
@@ -13,6 +14,20 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        $category = [
+            [
+                'name' => 'Football',
+                'slug' => 'football',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Volley',
+                'slug' => 'volley',
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
+        ];
+        Category::insert($category);
     }
 }

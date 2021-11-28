@@ -23,15 +23,15 @@
 </style>
 <section class="text-center">
     <img src="{{URL::asset('/image/logo.png')}}" style="width: 250px; padding-top: 122px;" alt="" />
-    <div class="container text-center" style="width: 600px">
+    <div class="container text-center" style="width: 100vw">
         <div class="row">
-            <a href="/" class="col {{($title === 'Articles')? 'active' : ''}}">Beranda</a>
-            <a href="/categories" class="col {{($title === 'Article Categores')? 'active' : ''}}">Kategori</a>
-            <a href="#" class="col mb-4 {{($title === 'Account')? 'active' : ''}}"> Akun</a>
+            <a href="/" class="col {{($title === 'Articles')? 'active' : ''}}">Home</a>
+            <a href="/categories" class="col {{($title === 'Article Categores')? 'active' : ''}}">Categories</a>
+            <a href="#" class="col mb-4 {{($title === 'Account')? 'active' : ''}}">Profile</a>
         </div>
     </div>
     <div class="position-absolute top-120 start-50 translate-middle mt-4">
-        <hr style="color: white; height: 3px; size: 10px; width: 1000px" />
+        <hr style="color: white; height: 3px; size: 10px; width: 100vw" />
     </div>
     <p style="text-align: center; color: white; margin-top: 80px; font-family:'Poppins'">Wargani</p>
 </section>
