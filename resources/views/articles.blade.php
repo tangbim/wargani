@@ -59,7 +59,7 @@
             </div>
             <div class="row">
                 @foreach ($articles->skip(3) as $article)
-                    <div class="col-md-4 mb-4">
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4">
                         <div class="card text-white bg-dark text-center" style="width: 20rem;">
                             {{-- <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="..."> --}}
                             <img src="https://source.unsplash.com/1600x800/?soccer" class="card-img-top" alt="...">
