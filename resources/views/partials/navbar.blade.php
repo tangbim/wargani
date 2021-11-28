@@ -77,8 +77,8 @@
         font-weight: bold;
     }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+    <div class="container-fluid">
         <a class="navbar-brand"> <img src="{{URL::asset('/image/logo.png')}}" alt="logo" width="300px" height="113px" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
