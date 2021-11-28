@@ -22,15 +22,6 @@
         margin-top: 40px !important;
     }
 
-<<<<<<< HEAD
-=======
-    .signup {
-        margin-left: 260px;
-        width: 140px;
-        height: 50px;
-    }
-
->>>>>>> refs/remotes/origin/main
     .signup:hover {
         background-color: #00C99C !important;
     }
