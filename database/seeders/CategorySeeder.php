@@ -22,8 +22,14 @@ class CategorySeeder extends Seeder
                 'updated_at' => now()
             ],
             [
-                'name' => 'Volley',
-                'slug' => 'volley',
+                'name' => 'Basketball',
+                'slug' => 'basketball',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Badminton',
+                'slug' => 'badminton',
                 'created_at' => now(),
                 'updated_at' => now()
             ]

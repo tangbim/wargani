@@ -13,7 +13,7 @@ class ArticleController extends Controller {
     public function index() {
         return view('articles', [
             "title" => "Articles",
-            "articles" => Article::all(),
+            "articles" => Article::latest()->get(),
         ]);
     }
 

@@ -20,14 +20,18 @@
         color: #00C99C !important;
         font-weight: bold;
     }
+
 </style>
 <section class="text-center">
-    <img src="{{URL::asset('/image/logo.png')}}" style="width: 250px; padding-top: 122px;" alt="" />
+    <a href="/">
+        <img src="{{ URL::asset('/image/logo.png') }}" style="width: 250px; padding-top: 122px;" alt="" />
+    </a>
     <div class="container text-center" style="width: 100vw">
         <div class="row">
-            <a href="/" class="col footer-item {{($title === 'Articles')? 'active' : ''}}">Home</a>
-            <a href="/categories" class="col footer-item {{($title === 'Article Categores')? 'active' : ''}}">Categories</a>
-            <a href="#" class="col mb-4 footer-item {{($title === 'Account')? 'active' : ''}}">Profile</a>
+            <a href="/" class="col footer-item {{ $title === 'Articles' ? 'active' : '' }}">Home</a>
+            <a href="/categories"
+                class="col footer-item {{ $title === 'Article Categores' ? 'active' : '' }}">Categories</a>
+            <a href="#" class="col mb-4 footer-item {{ $title === 'Account' ? 'active' : '' }}">Profile</a>
         </div>
     </div>
     <div class="position-absolute top-120 start-50 translate-middle mt-4">
