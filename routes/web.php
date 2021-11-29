@@ -26,10 +26,12 @@ Route::get('/categories', [CategoryController::class, 'index']);
 
 Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 
-Route::get('/login', [LoginController::class, 'login']);
+// Route::get('/login', [LoginController::class, 'login']);
 
-Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'store']);
+// Route::get('/register', [RegisterController::class, 'index']);
+// Route::post('/register', [RegisterController::class, 'store']);
 
 //apply slug on account so not trackable
 Route::get('/account', [LoginController::class, 'account']);
+
+require __DIR__.'/auth.php';

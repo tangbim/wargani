@@ -68,20 +68,21 @@
             <main class="form-signin">
                 <h1 class="judul mt-5 fw-bold text-center">Info Olahraga Terkini dan JOSSS</h1>
                 <small class="text d-block mb-5 wi text-center w-75 mx-auto">Memberikan info terkini seputar olahraga terkini dan pastinya aktual dari seantero jagad raya</small>
-                <form class=" w-75 mx-auto">
+                <form class=" w-75 mx-auto" method="POST" action="{{ route('login') }}">
+                    @csrf
                     <div class="form-floating">
-                        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label class="text" for="email">Email address</label>
+                        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" :value="old('email')" required autofocus>
+                        <label class="text" for="email" :value="__('Email')">Email address</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label class="text" for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required autocomplete="current-password">
+                        <label class="text" for="password" :value="__('Password')">Password</label>
                     </div>
                     <div class="col text-center">
                         <button class="masuk btn-outline-light rounded-pill " type="submit">Login</button>
                     </div>
                 </form>
-                <small class="text d-block text-center mt-3 wi" style="color:white">Not registered? <a class="link" href="/signup">Register Now!</a></small>
+                <small class="text d-block text-center mt-3 wi" style="color:white">Not registered? <a class="link" href="/register">Register Now!</a></small>
             </main>
         </div>
     </div>

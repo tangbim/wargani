@@ -68,7 +68,7 @@
         }
     }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #000000;">
     <div class="container">
         <a class="navbar-brand"> <img src="{{ URL::asset('/image/logo.png') }}" alt="logo" width="250px" height="113px" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,10 +82,25 @@
                 <li class="nav-item">
                     <a class="nav-link {{ $title === 'Article Categories' ? 'active' : '' }}" href="/categories">Categories</a>
                 </li>
+                @auth
                 <li class="nav-item">
                     <a class="nav-link {{ $title === 'Account' ? 'active' : '' }}" href="/account">Profile</a>
                 </li>
+                @endauth
             </ul>
+            @auth
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button class="btn btn-outline-light rounded-pill signup" type="submit">
+                            <span class="align-baseline" style="font-family: Poppins">Log Out</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+            @endauth
+            @guest
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item">
                     <button class="btn btn-outline-light rounded-pill signup" type="submit" onclick="location.href='/register'">
@@ -98,6 +113,7 @@
                     </button>
                 </li>
             </ul>
+            @endguest
         </div>
     </div>
 </nav>

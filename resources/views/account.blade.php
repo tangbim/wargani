@@ -28,7 +28,7 @@
 <body style="background-color: black;">
     <div class="block">
         <div class="alignitems">
-            <h1 class="nama">Kelompok 7
+            <h1 class="nama">{{ Auth::user()->name }}
                 <!-- example -->
             </h1>
         </div>

@@ -71,13 +71,13 @@
                     <h1 class="judul mt-5 fw-bold text-center">Info Olahraga Terkini dan JOSSS</h1>
                     <small class="text d-block mb-5 wi text-center w-75 mx-auto">Memberikan info terkini seputar olahraga
                         terkini dan pastinya aktual dari seantero jagad raya</small>
-                    <form class=" w-75 mx-auto" method="POST" action="/register">
+                    <form class=" w-75 mx-auto" method="POST" action="{{ route('register') }}">
                         @csrf
                         {{-- name --}}
                         <div class="form-floating">
                             <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name"
                                 placeholder="Name" required value="{{ old('name') }}">
-                            <label class="text" for="name">Name</label>
+                            <label class="text" for="name" :value="__('Name')">Name</label>
                             @error('name')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -86,16 +86,16 @@
                         </div>
 
                         {{-- username --}}
-                        <div class="form-floating">
+                        {{-- <div class="form-floating">
                             <input type="text" name="username" class="form-control @error('username') is-invalid @enderror"
                                 id="username" placeholder="Username" required>
                             <label class="text" for="username">Username</label>
-                        </div>
+                        </div> --}}
                         <div class="form-floating">
                             <input type="email" name="email" class="form-control" id="email"
-                                placeholder="name@example.com" required>
-                            <label class="text" for="email">Email</label>
-                            @error('username')
+                                placeholder="Email" required>
+                            <label class="text" for="email" :value="__('Email')">Email</label>
+                            @error('email')
                                 <div class="invalid-feedback">
                                     {{ $message }}
                                 </div>
@@ -106,9 +106,20 @@
                         <div class="form-floating">
                             <input type="password" name="password"
                                 class="form-control @error('password') is-invalid @enderror" id="password"
-                                placeholder="Password" required>
-                            <label class="text" for="password">Password</label>
+                                placeholder="Password" required type="password">
+                            <label class="text" for="password" :value="__('Password')">Password</label>
                             @error('password')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" name="password_confirmation"
+                                class="form-control @error('password_confirmation') is-invalid @enderror" id="password_confirmation"
+                                placeholder="Confirm Password" required>
+                            <label class="text" for="password_confirmation" :value="__('Confirm Password')">Confirm Password</label>
+                            @error('password_confirmation')
                                 <div class="invalid-feedback">
                                     {{ $message }}
                                 </div>
