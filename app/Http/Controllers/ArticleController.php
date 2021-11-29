@@ -8,19 +8,16 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreArticleRequest;
 use App\Http\Requests\UpdateArticleRequest;
 
-class ArticleController extends Controller
-{
+class ArticleController extends Controller {
 
-    public function index()
-    {
+    public function index() {
         return view('articles', [
             "title" => "Articles",
             "articles" => Article::all(),
         ]);
     }
 
-    public function show(Article $article)
-    {
+    public function show(Article $article) {
         return view('article', [
             "title" => "Single Article",
             "article" => $article,
@@ -28,27 +25,22 @@ class ArticleController extends Controller
         ]);
     }
 
-    public function create()
-    {
+    public function create() {
         //
     }
 
-    public function store(StoreArticleRequest $request)
-    {
+    public function store(StoreArticleRequest $request) {
         //
     }
 
-    public function edit(Article $article)
-    {
+    public function edit(Article $article) {
         //
     }
 
-    public function update(UpdateArticleRequest $request, Article $article)
-    {
+    public function update(UpdateArticleRequest $request, Article $article) {
         //
     }
-    public function destroy(Article $article)
-    {
+    public function destroy(Article $article) {
         //
     }
 }
