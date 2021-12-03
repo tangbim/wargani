@@ -1,23 +1,10 @@
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <style>
-    .block {
-        background: #3d3d3d;
-        width: 1260px;
-        height: 480px;
-        display: flex;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        margin-top: 50px;
-    }
-
     .nama {
         color: white;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: bold;
-        font-size: 100px;
-        padding: 200px;
-        padding-top: 330px;
+        font-size: 80px;
     }
 </style>
 
@@ -25,12 +12,11 @@
 
 @section('container')
 
-<body style="background-color: black;">
-    <div class="block">
-        <div class="alignitems">
-            <h1 class="nama">{{ Auth::user()->name }}
-                <!-- example -->
-            </h1>
+<body style="background-color:black">
+    <div class="card bg-dark text-white">
+        <img class="card-img" src="https://source.unsplash.com/1600x480/?soccer" alt="Card image">
+        <div class="card-img-overlay d-flex align-items-start flex-column">
+            <h1 class="nama mt-auto card-title">{{ Auth::user()->name }}</h`>
         </div>
     </div>
 </body>

@@ -31,7 +31,8 @@ Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 // Route::get('/register', [RegisterController::class, 'index']);
 // Route::post('/register', [RegisterController::class, 'store']);
 
-//apply slug on account so not trackable
 Route::get('/account', [LoginController::class, 'account']);
 
-require __DIR__.'/auth.php';
+Route::post('/comment', [CommentController::class, 'index']);
+
+require __DIR__ . '/auth.php';
