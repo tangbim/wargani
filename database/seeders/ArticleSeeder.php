@@ -15,6 +15,7 @@ class ArticleSeeder extends Seeder {
         $post1 = [
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 1',
                 'slug' => 'post-one',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -25,6 +26,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 2',
                 'slug' => 'post-two',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -35,6 +37,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 3',
                 'slug' => 'post-three',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -45,6 +48,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 4',
                 'slug' => 'post-four',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -55,6 +59,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 5',
                 'slug' => 'post-five',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -65,6 +70,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 6',
                 'slug' => 'post-six',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -75,6 +81,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 7',
                 'slug' => 'post-seven',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -85,6 +92,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 8',
                 'slug' => 'post-eight',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -95,6 +103,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 9',
                 'slug' => 'post-nine',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -105,6 +114,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => rand(1, 3),
+                'user_id' => 1,
                 'title' => 'Title 10',
                 'slug' => 'post-ten',
                 'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -120,6 +130,7 @@ class ArticleSeeder extends Seeder {
 
             [
                 'category_id' => 1,
+                'user_id' => 1,
                 'title' => 'Resmi Dipecat Nih Bos! Manchester United Akhirnya Depak Ole Gunnar Solskjaer',
                 'slug' => 'resmi-dipecat-nih-bos-manchester-united-akhirnya-depak-ole-gunnar-solskjaer',
                 'excerpt' => 'Raksasa Premier League Manchester United akhirnya resmi memecat Ole',
@@ -130,6 +141,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => 1,
+                'user_id' => 1,
                 'title' => 'Januari, Kepa Bakal Cabut dari Chelsea?',
                 'slug' => 'januari-kepa-bakal-cabut-dari-chelsea',
                 'excerpt' => 'Spekulasi baru beredar mengenai masa depan Kepa Arrizabalaga.',
@@ -140,6 +152,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => 1,
+                'user_id' => 1,
                 'title' => 'Feburari Aku berkenalan denganmu',
                 'slug' => 'post-tiga',
                 'excerpt' => 'Januari, Kepa Bakal Cabut dari Chelsea?',
@@ -150,6 +163,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => 1,
+                'user_id' => 1,
                 'title' => 'Januari, desember',
                 'slug' => 'januari-desember',
                 'excerpt' => 'Januari, Kepa Bakal Cabut dari Chelsea?',
@@ -160,6 +174,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => 1,
+                'user_id' => 1,
                 'title' => 'Januari Maret',
                 'slug' => 'januari-maret',
                 'excerpt' => 'Januari, Kepa Bakal Cabut dari Chelsea?',
@@ -170,6 +185,7 @@ class ArticleSeeder extends Seeder {
             ],
             [
                 'category_id' => 2,
+                'user_id' => 1,
                 'title' => 'Kualifikasi FIBA World Cup 2023: Indonesia Dua Kali Dilibas Lebanon',
                 'slug' => 'kualifikasi-fiba-world-cup-2023-indonesia-dua-kali-dilibas-lebanon',
                 'excerpt' => 'Indonesia menelan dua kekalahan melawan Lebanon di windows pertama kualifikasi',
@@ -208,6 +224,7 @@ class ArticleSeeder extends Seeder {
 
             [
                 'category_id' => 2,
+                'user_id' => 1,
                 'title' => 'Ganesha Warriors, dari Karawang untuk Basket Indonesia',
                 'slug' => 'ganesha-warriors-dari-karawang-untuk-basket-indonesia',
                 'excerpt' => 'Ada banyak cara dilakukan untuk memajukan prestasi perbasketan Indonesia',
@@ -240,7 +257,8 @@ class ArticleSeeder extends Seeder {
             ],
 
             [
-                'category_id' => 2, 'title' => 'DBL Diperluas dengan Prokes Ketat', 'slug'
+                'category_id' => 2,
+                'user_id' => 1, 'title' => 'DBL Diperluas dengan Prokes Ketat', 'slug'
                 => 'dbl-diperluas-dengan-prokes-ketat',
                 'excerpt' => 'Ketua Komite Penanganan Covid-19 dan Pemulihan Ekonomi Nasional (KPC-PEN),
             Airlangga Hartarto', 'body' => '
@@ -276,7 +294,8 @@ class ArticleSeeder extends Seeder {
             ],
 
             [
-                'category_id' => 2, 'title' => '13 Tim Bersaing Jadi yang Terbaik di LIMA
+                'category_id' => 2,
+                'user_id' => 1, 'title' => '13 Tim Bersaing Jadi yang Terbaik di LIMA
 Basketball 2021',
                 'slug' => '13-tim-bersaing-jadi-yang-terbaik-di-lima-basketball-2021', 'excerpt' => 'Liga Mahasiswa (LIMA) membuka perhelatan LIMA Basketball 2021.', 'body' => '
 <p>
@@ -308,6 +327,7 @@ Basketball 2021',
 
             [
                 'category_id' => 2,
+                'user_id' => 1,
                 'title' => 'Lagu Indonesia Diputar Tak Utuh, Perbasi Ajukan Protes ke Lebanon',
                 'slug' => 'lagu-indonesia-diputar-tak-utuh-perbasi-ajukan-protes-ke-lebanon',
                 'excerpt' => 'Pengalaman mengecewakan dialami Timnas basket Indonesia.',
@@ -321,7 +341,7 @@ Basketball 2021',
 </p>
 
 <p>
- 
+
 Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indonesia sebagai tim tamu.
 
 </p>
@@ -335,6 +355,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
             ],
             [
                 'category_id' => 3,
+                'user_id' => 1,
                 'title' => 'BWF World Tour Finals: Greysia/Apriyani Tembus Semifinal!',
                 'slug' => 'bwf-world-tour-finals-greysiaapriyani-tembus-semifinal',
                 'excerpt' => 'Greysia Polii/Apriyani Rahayu menghadapi Pearly Tan/Thinaah Muralitharan',
@@ -345,6 +366,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
             ],
             [
                 'category_id' => 3,
+                'user_id' => 1,
                 'title' => 'Main Agresif, Praveen/Melati pun Menang',
                 'slug' => 'main-agresif-praveenmelati-pun-menang',
                 'excerpt' => 'Praveen Jordan/Melati Daeva Oktavianti menjaga kans ke semifinal BWF',
@@ -355,6 +377,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
             ],
             [
                 'category_id' => 3,
+                'user_id' => 1,
                 'title' => 'Ini Fokus Jonatan Christie dkk Jelang Kejuaraan Dunia',
                 'slug' => 'ini-fokus-jonatan-christie-dkk-jelang-kejuaraan-dunia',
                 'excerpt' => 'Setelah gagal lolos ke BWF World Tour Finals 2021, Jonatan Christie dkk',
@@ -365,6 +388,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
             ],
             [
                 'category_id' => 3,
+                'user_id' => 1,
                 'title' => 'Kejuaraan Dunia Bulutangkis: Minions & 5 Wakil RI Lainnya Dapat Bye',
                 'slug' => 'kejuaraan-dunia-bulutangkis-minions--5-wakil-ri-lainnya-dapat-bye',
                 'excerpt' => 'Enam wakil Indonesia di Kejuaraan Dunia Bulutangkis langsung melaju ke putaran kedua',
@@ -375,6 +399,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
             ],
             [
                 'category_id' => 3,
+                'user_id' => 1,
                 'title' => 'Pram/Yere Kalah Akibat Tak Bisa Keluar dari Tekanan Hoki/Kobayashi',
                 'slug' => 'pramyere-kalah-akibat-tak-bisa-keluar-dari-tekanan-hokikobayashi',
                 'excerpt' => 'Ganda muda Indonesia Pramudya Kusumawardana/Yeremia Erich Yoche Yacob',

@@ -33,6 +33,6 @@ Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 
 Route::get('/account', [LoginController::class, 'account']);
 
-Route::post('/comment', [CommentController::class, 'index']);
+Route::post('/comment', [CommentController::class, 'store']);
 
 require __DIR__ . '/auth.php';
