@@ -6,6 +6,11 @@
   </div>
 
   <h2 class="text-white my-3">User</h2>
+  @if (session()->has('success'))
+  <div class="alert alert-success" role="alert">
+    {{ session('success') }}
+  </div>
+  @endif
   <table class="table table-dark">
       <thead>
         <tr>
@@ -23,8 +28,12 @@
               <td>{{ $article->user->name }}</td>
               <td>{{ $article->excerpt }}</td>
               <td style="width: 15%">
-                  <a class="btn btn-primary btn-sm mb-1 mb-md-0" href="/article/{{ $article->slug }}" role="button">View</a>
-                  <a class="btn btn-danger btn-sm" href="#" role="button">Delete</a>
+                <form action="/dashboard/article/{{ $article->slug }}" method="post">
+                    @method('delete')
+                    @csrf
+                    <a class="btn btn-primary btn-sm mb-1 mb-md-0" href="/article/{{ $article->slug }}" role="button">View</a>
+                    <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                </form>
               </td>
           </tr>
           @php($count++)

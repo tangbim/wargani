@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RegisterController;
 use App\Models\Article;
 
@@ -29,19 +30,9 @@ Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
 
 Route::group(['middleware' => ['admin']], function () {
-    Route::get('/dashboard', function (){
-        return view('dashindex', [
-            'title' => 'User Dashboard',
-            'users' => User::all()
-        ]);
-    });
-
-    Route::get('/dashboard/article', function (){
-        return view('dasharticle', [
-            'title' => 'Articles Dashboard',
-            'articles' => Article::all()
-        ]);
-    });
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::get('/dashboard/article', [DashboardController::class, 'indexArticle']);
+    Route::delete('/dashboard/article/{article:slug}', [DashboardController::class, 'destroy']);
 });
 
 // Route::get('/login', [LoginController::class, 'login']);
