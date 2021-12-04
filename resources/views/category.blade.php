@@ -14,7 +14,7 @@
 
         <div class=row>
             @foreach ($articles as $article)
-                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 d-flex align-items-stretch">
                     <div class="card text-white bg-dark text-center" style="width: 20rem;">
                         <img src="https://source.unsplash.com/1600x800/?{{ $article->category->name }}"
                             class="card-img-top" alt="...">

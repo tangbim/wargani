@@ -18,15 +18,16 @@ class DatabaseSeeder extends Seeder
             ArticleSeeder::class,
             CategorySeeder::class,
         ]);
-        $post1 = [
+        $user1 = [
             [
                 'name' => 'admin',
                 'email' => 'admin@admin.com',
+                'is_admin' => 1,
                 'password' => bcrypt('password'),
                 'created_at' => now(),
                 'updated_at' => now()
             ],
         ];
-        User::insert($post1);
+        User::insert($user1);
     }
 }
