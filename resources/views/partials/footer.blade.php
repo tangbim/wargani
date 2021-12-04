@@ -31,11 +31,13 @@
             <a href="/" class="col footer-item {{ $title === 'Articles' ? 'active' : '' }}">Home</a>
             <a href="/categories"
                 class="col footer-item {{ $title === 'Article Categores' ? 'active' : '' }}">Categories</a>
-            <a href="#" class="col mb-4 footer-item {{ $title === 'Account' ? 'active' : '' }}">Profile</a>
+            @auth
+                <a href="/account" class="col mb-4 footer-item {{ $title === 'Account' ? 'active' : '' }}">Profile</a>
+            @endauth
         </div>
     </div>
     <div class="position-absolute top-120 start-50 translate-middle mt-4">
         <hr style="color: white; height: 3px; size: 10px; width: 98vw" />
     </div>
-    <p style="text-align: center; color: white; margin-top: 80px; font-family:'Poppins'">Wargani</p>
+    <p style="text-align: center; color: white; margin-top: 80px; font-family:'Poppins'">Wargani by Kelompok 7</p>
 </section>

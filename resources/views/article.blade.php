@@ -55,6 +55,7 @@
                     <p class="mt-3">By: {{ $article->user->name }} in <a
                             href="/categories/{{ $article->category->slug }}"
                             class="text-decoration-none">{{ $article->category->name }}</a>
+                        {{ $article->created_at->diffForHumans() }}
                     </p>
 
                     <article class="my-3 fs-5">
