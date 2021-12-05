@@ -27,6 +27,30 @@ class DatabaseSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now()
             ],
+            [
+                'name' => 'bola.net',
+                'email' => 'bolanet@wargani.com',
+                'is_admin' => 0,
+                'password' => bcrypt('bolanet123'),
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Sport Detik',
+                'email' => 'sportdetik@wargani.com',
+                'is_admin' => 0,
+                'password' => bcrypt('sportdetik123'),
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Medcom',
+                'email' => 'medcom@wargani.com',
+                'is_admin' => 0,
+                'password' => bcrypt('medcom123'),
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
         ];
         User::insert($user1);
     }

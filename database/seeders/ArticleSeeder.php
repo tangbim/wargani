@@ -130,7 +130,7 @@ class ArticleSeeder extends Seeder {
 
       [
         'category_id' => 1,
-        'user_id' => 1,
+        'user_id' => 2,
         'title' => 'Resmi Dipecat Nih Bos! Manchester United Akhirnya Depak Ole Gunnar Solskjaer',
         'slug' => 'resmi-dipecat-nih-bos-manchester-united-akhirnya-depak-ole-gunnar-solskjaer',
         'excerpt' => 'Raksasa Premier League Manchester United akhirnya resmi memecat Ole',
@@ -141,7 +141,7 @@ class ArticleSeeder extends Seeder {
       ],
       [
         'category_id' => 1,
-        'user_id' => 1,
+        'user_id' => 2,
         'title' => 'Januari, Kepa Bakal Cabut dari Chelsea?',
         'slug' => 'januari-kepa-bakal-cabut-dari-chelsea',
         'excerpt' => 'Spekulasi baru beredar mengenai masa depan Kepa Arrizabalaga.',
@@ -152,7 +152,7 @@ class ArticleSeeder extends Seeder {
       ],
       [
         'category_id' => 1,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => "Ballon d'Or 2021: Allegri Akui Messi yang Terbaik Secara Teknik",
         'slug' => "ballon-dor-2021-allegri-akui-messi-yang-terbaik-secara-teknik",
         'excerpt' => 'Massimilano Allegri mengomentari Lionel Messi',
@@ -163,7 +163,7 @@ class ArticleSeeder extends Seeder {
       ],
       [
         'category_id' => 1,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Menanti Akhir Drama, Mbappe-Madrid-PSG',
         'slug' => 'menanti-akhir-drama-mbappe-madrid-psg',
         'excerpt' => 'Real Madrid menanti kedatangan Kylian Mbappe',
@@ -174,7 +174,7 @@ class ArticleSeeder extends Seeder {
       ],
       [
         'category_id' => 1,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Geger Dokter Gadungan, PSS Sleman Laporkan Elwizan Aminudin ke Polisi',
         'slug' => 'geger-dokter-gadungan-pss-sleman-laporkan-elwizan-aminudin-ke-polisi',
         'excerpt' => 'Manajemen PSS Sleman akhirnya menempuh jalur hukum dan resmi melaporkan Elwizan Aminudin ke Polres Sleman',
@@ -186,7 +186,7 @@ class ArticleSeeder extends Seeder {
       ],
       [
         'category_id' => 2,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Kualifikasi FIBA World Cup 2023: Indonesia Dua Kali Dilibas Lebanon',
         'slug' => 'kualifikasi-fiba-world-cup-2023-indonesia-dua-kali-dilibas-lebanon',
         'excerpt' => 'Indonesia menelan dua kekalahan melawan Lebanon di windows pertama kualifikasi',
@@ -225,7 +225,7 @@ class ArticleSeeder extends Seeder {
 
       [
         'category_id' => 2,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Ganesha Warriors, dari Karawang untuk Basket Indonesia',
         'slug' => 'ganesha-warriors-dari-karawang-untuk-basket-indonesia',
         'excerpt' => 'Ada banyak cara dilakukan untuk memajukan prestasi perbasketan Indonesia',
@@ -259,8 +259,9 @@ class ArticleSeeder extends Seeder {
 
       [
         'category_id' => 2,
-        'user_id' => 1, 'title' => 'DBL Diperluas dengan Prokes Ketat', 'slug'
-        => 'dbl-diperluas-dengan-prokes-ketat',
+        'user_id' => 3,
+        'title' => 'DBL Diperluas dengan Prokes Ketat',
+        'slug' => 'dbl-diperluas-dengan-prokes-ketat',
         'excerpt' => 'Ketua Komite Penanganan Covid-19 dan Pemulihan Ekonomi Nasional (KPC-PEN),
             Airlangga Hartarto', 'body' => '
 <p>
@@ -296,8 +297,8 @@ class ArticleSeeder extends Seeder {
 
       [
         'category_id' => 2,
-        'user_id' => 1, 'title' => '13 Tim Bersaing Jadi yang Terbaik di LIMA
-Basketball 2021',
+        'user_id' => 3,
+        'title' => '13 Tim Bersaing Jadi yang Terbaik di LIMA Basketball 2021',
         'slug' => '13-tim-bersaing-jadi-yang-terbaik-di-lima-basketball-2021', 'excerpt' => 'Liga Mahasiswa (LIMA) membuka perhelatan LIMA Basketball 2021.', 'body' => '
 <p>
   Liga Mahasiswa (LIMA) membuka perhelatan LIMA Basketball 2021. Ada 13 tim yang
@@ -328,7 +329,7 @@ Basketball 2021',
 
       [
         'category_id' => 2,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Lagu Indonesia Diputar Tak Utuh, Perbasi Ajukan Protes ke Lebanon',
         'slug' => 'lagu-indonesia-diputar-tak-utuh-perbasi-ajukan-protes-ke-lebanon',
         'excerpt' => 'Pengalaman mengecewakan dialami Timnas basket Indonesia.',
@@ -356,7 +357,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       ],
       [
         'category_id' => 3,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'BWF World Tour Finals: Greysia/Apriyani Tembus Semifinal!',
         'slug' => 'bwf-world-tour-finals-greysiaapriyani-tembus-semifinal',
         'excerpt' => 'Greysia Polii/Apriyani Rahayu menghadapi Pearly Tan/Thinaah Muralitharan',
@@ -367,7 +368,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       ],
       [
         'category_id' => 3,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Main Agresif, Praveen/Melati pun Menang',
         'slug' => 'main-agresif-praveenmelati-pun-menang',
         'excerpt' => 'Praveen Jordan/Melati Daeva Oktavianti menjaga kans ke semifinal BWF',
@@ -378,7 +379,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       ],
       [
         'category_id' => 3,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Ini Fokus Jonatan Christie dkk Jelang Kejuaraan Dunia',
         'slug' => 'ini-fokus-jonatan-christie-dkk-jelang-kejuaraan-dunia',
         'excerpt' => 'Setelah gagal lolos ke BWF World Tour Finals 2021, Jonatan Christie dkk',
@@ -389,7 +390,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       ],
       [
         'category_id' => 3,
-        'user_id' => 1,
+        'user_id' => 3,
         'title' => 'Kejuaraan Dunia Bulutangkis: Minions & 5 Wakil RI Lainnya Dapat Bye',
         'slug' => 'kejuaraan-dunia-bulutangkis-minions--5-wakil-ri-lainnya-dapat-bye',
         'excerpt' => 'Enam wakil Indonesia di Kejuaraan Dunia Bulutangkis langsung melaju ke putaran kedua',
@@ -400,7 +401,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       ],
       [
         'category_id' => 3,
-        'user_id' => 1,
+        'user_id' => 4,
         'title' => 'Pram/Yere Kalah Akibat Tak Bisa Keluar dari Tekanan Hoki/Kobayashi',
         'slug' => 'pramyere-kalah-akibat-tak-bisa-keluar-dari-tekanan-hokikobayashi',
         'excerpt' => 'Ganda muda Indonesia Pramudya Kusumawardana/Yeremia Erich Yoche Yacob',
