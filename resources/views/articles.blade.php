@@ -3,7 +3,7 @@
 @section('container')
     <style>
         .caurosel-item {
-            width: 800px;
+            height: 800px;
             length: 1600px;
         }
 

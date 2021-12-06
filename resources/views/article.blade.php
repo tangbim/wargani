@@ -50,7 +50,7 @@
                 <div class="col-md-8">
                     <h1 class="mb-3">{{ $article->title }}</h1>
 
-                    <img src="{{ $article->image }}" alt="{{ $article->category->name }}" class="img-fluid">
+                    <img src="{{ $article->image }}" alt="{{ $article->category->name }}" class="img-fluid w-100">
                     {{-- default src img https://source.unsplash.com/1600x700?{{ $article->category->name }} --}}
                     <p class="mt-3">By: {{ $article->user->name }} in <a
                             href="/categories/{{ $article->category->slug }}"
@@ -65,7 +65,7 @@
                     <a href="/" class="text-decoration-none d-block mt-3">Back to Articles</a>
                 </div>
                 <div class="col-md-8">
-                    <h1 class="mt-3 text-center">Komentar</h1>
+                    <h1 class="mt-3 text-center">Comment</h1>
                     @foreach ($comments as $comment)
                         <h3 class="mt-3">
                             {{ $comment->user->name }}
