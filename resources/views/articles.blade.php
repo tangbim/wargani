@@ -2,9 +2,9 @@
 
 @section('container')
     <style>
-        .caurosel-item {
-            height: 800px;
-            length: 1600px;
+        .image-override {
+            height: 600px !important;
+            length: 1600px !important;
         }
 
     </style>
@@ -21,10 +21,10 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
+                    <div class="carousel-item active image-override" data-bs-interval="5000">
                         <a href="article/{{ $articles[0]->slug }}">
                             {{-- image yang di caurosel defaultnya kita dulu pake 1600x800 unsplash version --}}
-                            <img src="{{ $articles[0]->image }}" class="d-block w-100 img-fluid" alt="...">
+                            <img src="{{ $articles[0]->image }}" class="d-block w-100" alt="...">
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <div class="px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div class="carousel-item image-override" data-bs-interval="5000">
                         <a href="article/{{ $articles[1]->slug }}">
                             <img src="{{ $articles[1]->image }}" class="d-block w-100" alt="...">
                         </a>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div class="carousel-item image-override" data-bs-interval="5000">
                         <a href="article/{{ $articles[2]->slug }}">
                             <img src="{{ $articles[2]->image }}" class="d-block w-100" alt="...">
                         </a>
