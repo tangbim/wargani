@@ -12,125 +12,12 @@ class ArticleSeeder extends Seeder {
    * @return void
    */
   public function run() {
-    $post1 = [
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 1',
-        'slug' => 'post-one',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 2',
-        'slug' => 'post-two',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 3',
-        'slug' => 'post-three',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 4',
-        'slug' => 'post-four',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 5',
-        'slug' => 'post-five',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 6',
-        'slug' => 'post-six',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 7',
-        'slug' => 'post-seven',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 8',
-        'slug' => 'post-eight',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 9',
-        'slug' => 'post-nine',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-      [
-        'category_id' => rand(1, 3),
-        'user_id' => 1,
-        'title' => 'Title 10',
-        'slug' => 'post-ten',
-        'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus ipsam possimus illum adipisci quod deleniti id eaque quis, unde totam ab, magnam fugit, necessitatibus iste dolorum facere porro eius.',
-        'published_at' => now(),
-        'created_at' => now(),
-        'updated_at' => now()
-      ],
-
-
-    ];
     $post2 = [
 
       [
         'category_id' => 1,
         'user_id' => 2,
+        'image' => 'https://i.ibb.co/yq1tYsz/ole-gunnar-solskjaer-1d1a478.jpg',
         'title' => 'Resmi Dipecat Nih Bos! Manchester United Akhirnya Depak Ole Gunnar Solskjaer',
         'slug' => 'resmi-dipecat-nih-bos-manchester-united-akhirnya-depak-ole-gunnar-solskjaer',
         'excerpt' => 'Raksasa Premier League Manchester United akhirnya resmi memecat Ole',
@@ -142,6 +29,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 1,
         'user_id' => 2,
+        'image' => 'https://i.ibb.co/SnCnY0C/kepa-arrizabalaga-ee15531.jpg',
         'title' => 'Januari, Kepa Bakal Cabut dari Chelsea?',
         'slug' => 'januari-kepa-bakal-cabut-dari-chelsea',
         'excerpt' => 'Spekulasi baru beredar mengenai masa depan Kepa Arrizabalaga.',
@@ -153,6 +41,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 1,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/hCLfPFC/massimiliano-allegri-169.jpg',
         'title' => "Ballon d'Or 2021: Allegri Akui Messi yang Terbaik Secara Teknik",
         'slug' => "ballon-dor-2021-allegri-akui-messi-yang-terbaik-secara-teknik",
         'excerpt' => 'Massimilano Allegri mengomentari Lionel Messi',
@@ -164,6 +53,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 1,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/mRGG3vg/kylian-mbappe.jpg',
         'title' => 'Menanti Akhir Drama, Mbappe-Madrid-PSG',
         'slug' => 'menanti-akhir-drama-mbappe-madrid-psg',
         'excerpt' => 'Real Madrid menanti kedatangan Kylian Mbappe',
@@ -175,6 +65,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 1,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/vwDdn41/b20e8c97-b085-41a3-8fc0-a582f87b51f0.jpg',
         'title' => 'Geger Dokter Gadungan, PSS Sleman Laporkan Elwizan Aminudin ke Polisi',
         'slug' => 'geger-dokter-gadungan-pss-sleman-laporkan-elwizan-aminudin-ke-polisi',
         'excerpt' => 'Manajemen PSS Sleman akhirnya menempuh jalur hukum dan resmi melaporkan Elwizan Aminudin ke Polres Sleman',
@@ -187,6 +78,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 2,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/NmDcKQB/timnas-basket-2.jpg',
         'title' => 'Kualifikasi FIBA World Cup 2023: Indonesia Dua Kali Dilibas Lebanon',
         'slug' => 'kualifikasi-fiba-world-cup-2023-indonesia-dua-kali-dilibas-lebanon',
         'excerpt' => 'Indonesia menelan dua kekalahan melawan Lebanon di windows pertama kualifikasi',
@@ -226,6 +118,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 2,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/TL7QDns/akademi-basket-ganesha-warriors-169.jpg',
         'title' => 'Ganesha Warriors, dari Karawang untuk Basket Indonesia',
         'slug' => 'ganesha-warriors-dari-karawang-untuk-basket-indonesia',
         'excerpt' => 'Ada banyak cara dilakukan untuk memajukan prestasi perbasketan Indonesia',
@@ -260,6 +153,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 2,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/fV3Chms/development-basketball-league-dbl-169.jpg',
         'title' => 'DBL Diperluas dengan Prokes Ketat',
         'slug' => 'dbl-diperluas-dengan-prokes-ketat',
         'excerpt' => 'Ketua Komite Penanganan Covid-19 dan Pemulihan Ekonomi Nasional (KPC-PEN),
@@ -298,6 +192,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 2,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/HH19tN5/lima-basketball-169.jpg',
         'title' => '13 Tim Bersaing Jadi yang Terbaik di LIMA Basketball 2021',
         'slug' => '13-tim-bersaing-jadi-yang-terbaik-di-lima-basketball-2021', 'excerpt' => 'Liga Mahasiswa (LIMA) membuka perhelatan LIMA Basketball 2021.', 'body' => '
 <p>
@@ -330,6 +225,7 @@ class ArticleSeeder extends Seeder {
       [
         'category_id' => 2,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/B35V0Gw/timnas-basket-43.jpg',
         'title' => 'Lagu Indonesia Diputar Tak Utuh, Perbasi Ajukan Protes ke Lebanon',
         'slug' => 'lagu-indonesia-diputar-tak-utuh-perbasi-ajukan-protes-ke-lebanon',
         'excerpt' => 'Pengalaman mengecewakan dialami Timnas basket Indonesia.',
@@ -358,6 +254,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       [
         'category_id' => 3,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/nM9K6q8/greysiaapriyani-2.jpg',
         'title' => 'BWF World Tour Finals: Greysia/Apriyani Tembus Semifinal!',
         'slug' => 'bwf-world-tour-finals-greysiaapriyani-tembus-semifinal',
         'excerpt' => 'Greysia Polii/Apriyani Rahayu menghadapi Pearly Tan/Thinaah Muralitharan',
@@ -369,6 +266,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       [
         'category_id' => 3,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/qxzV79d/download.jpg',
         'title' => 'Main Agresif, Praveen/Melati pun Menang',
         'slug' => 'main-agresif-praveenmelati-pun-menang',
         'excerpt' => 'Praveen Jordan/Melati Daeva Oktavianti menjaga kans ke semifinal BWF',
@@ -380,6 +278,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       [
         'category_id' => 3,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/jvsKymb/jonatan-christie-indonesia-open-2021-169.jpg',
         'title' => 'Ini Fokus Jonatan Christie dkk Jelang Kejuaraan Dunia',
         'slug' => 'ini-fokus-jonatan-christie-dkk-jelang-kejuaraan-dunia',
         'excerpt' => 'Setelah gagal lolos ke BWF World Tour Finals 2021, Jonatan Christie dkk',
@@ -391,6 +290,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       [
         'category_id' => 3,
         'user_id' => 3,
+        'image' => 'https://i.ibb.co/7gZWp33/curi-perhatian-kevin-sanjaya-tampir-mempesona-dengan-headband-169.jpg',
         'title' => 'Kejuaraan Dunia Bulutangkis: Minions & 5 Wakil RI Lainnya Dapat Bye',
         'slug' => 'kejuaraan-dunia-bulutangkis-minions--5-wakil-ri-lainnya-dapat-bye',
         'excerpt' => 'Enam wakil Indonesia di Kejuaraan Dunia Bulutangkis langsung melaju ke putaran kedua',
@@ -402,6 +302,7 @@ Sebagai tuan rumah, Lebanon dinilai tak bisa menunjukkan rasa hormat kepada Indo
       [
         'category_id' => 3,
         'user_id' => 4,
+        'image' => 'https://i.ibb.co/rtRDnMd/pramudya-kusumawardanayeremia-erich-yoche-yacob-rambitan-169.jpg',
         'title' => 'Pram/Yere Kalah Akibat Tak Bisa Keluar dari Tekanan Hoki/Kobayashi',
         'slug' => 'pramyere-kalah-akibat-tak-bisa-keluar-dari-tekanan-hokikobayashi',
         'excerpt' => 'Ganda muda Indonesia Pramudya Kusumawardana/Yeremia Erich Yoche Yacob',

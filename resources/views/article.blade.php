@@ -50,8 +50,8 @@
                 <div class="col-md-8">
                     <h1 class="mb-3">{{ $article->title }}</h1>
 
-                    <img src="https://source.unsplash.com/1600x700?{{ $article->category->name }}"
-                        alt="{{ $article->category->name }}" class="img-fluid">
+                    <img src="{{ $article->image }}" alt="{{ $article->category->name }}" class="img-fluid">
+                    {{-- default src img https://source.unsplash.com/1600x700?{{ $article->category->name }} --}}
                     <p class="mt-3">By: {{ $article->user->name }} in <a
                             href="/categories/{{ $article->category->slug }}"
                             class="text-decoration-none">{{ $article->category->name }}</a>
@@ -114,16 +114,5 @@
                 </div>
             </div>
         </div>
-    </body>
-
-    {{-- <body style="background-color: black;">
-        <article class="text-white">
-            <h1 class="mb-5">{{ $article->title }}</h1>
-
-<p>By: Lintang Bima in <a href="/categories/{{ $article->category->slug }}">{{ $article->category->name }}</a>
-</p>
-
-{!! $article->body !!}
-</article> --}}
     </body>
 @endsection

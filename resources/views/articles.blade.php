@@ -1,6 +1,13 @@
 @extends('layouts.main')
 
 @section('container')
+    <style>
+        .caurosel-item {
+            width: 800px;
+            length: 1600px;
+        }
+
+    </style>
 
     <body style="background-color:black">
         <div class="container">
@@ -16,7 +23,8 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
                         <a href="article/{{ $articles[0]->slug }}">
-                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100" alt="...">
+                            {{-- image yang di caurosel defaultnya kita dulu pake 1600x800 unsplash version --}}
+                            <img src="{{ $articles[0]->image }}" class="d-block w-100 img-fluid" alt="...">
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <div class="px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -27,7 +35,7 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
                         <a href="article/{{ $articles[1]->slug }}">
-                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100" alt="...">
+                            <img src="{{ $articles[1]->image }}" class="d-block w-100" alt="...">
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <div class="px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -38,7 +46,7 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
                         <a href="article/{{ $articles[2]->slug }}">
-                            <img src="https://source.unsplash.com/1600x800/?soccer" class="d-block w-100" alt="...">
+                            <img src="{{ $articles[2]->image }}" class="d-block w-100" alt="...">
                         </a>
                         <div class="carousel-caption d-none d-md-block">
                             <div class="px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.7)">
@@ -63,10 +71,10 @@
                 @foreach ($articles->skip(3) as $article)
                     <div class="col-12 col-sm-6 col-lg-4 mb-4 d-flex align-items-stretch">
                         <div class="card text-white bg-dark text-center" style="width: 20rem;">
-                            <img src="https://source.unsplash.com/1600x800/?{{ $article->category->name }}"
-                                class="card-img-top" alt="...">
+                            <img src="{{ $article->image }}" class="card-img-top" alt="...">
+                            {{-- default image https://source.unsplash.com/1600x800/?{{ $article->category->name }} --}}
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">{{ $article['title'] }}</h5>
+                                <h5 class="card-title">{{ $article->title }}</h5>
                                 <p class="card-text">{{ $article->excerpt }}</p>
                                 <a href="article/{{ $article->slug }}" class="btn btn-primary mt-auto"
                                     style="background-color:#00C99C !important; border:none">Read More</a>
