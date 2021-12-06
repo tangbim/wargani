@@ -90,6 +90,11 @@
                     <li class="nav-item">
                         <a class="nav-link {{ $title === 'Account' ? 'active' : '' }}" href="/account">Profile</a>
                     </li>
+                    @if (Auth::user()->is_admin == 1)
+                    <li class="nav-item">
+                        <a class="nav-link {{ $title === 'User Dashboard' ? 'active' : '' }}" href="/dashboard">Dashboard</a>
+                    </li>
+                    @endif
                 @endauth
             </ul>
             @auth

@@ -33,6 +33,9 @@
                 class="col footer-item {{ $title === 'Article Categores' ? 'active' : '' }}">Categories</a>
             @auth
                 <a href="/account" class="col mb-4 footer-item {{ $title === 'Account' ? 'active' : '' }}">Profile</a>
+                @if (Auth::user()->is_admin == 1)
+                    <a href="/dashboard" class="col mb-4 footer-item {{ $title === 'User Dashboard' ? 'active' : '' }}">Dashboard</a>
+                @endif
             @endauth
         </div>
     </div>
