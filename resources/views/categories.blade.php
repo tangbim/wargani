@@ -3,7 +3,7 @@
 @section('container')
 
     <body style="background-color: black;">
-        <h1 class="mb-5 text-white">Post Categories:</h1>
+        <h1 class="mb-5 text-white">Article Categories:</h1>
         <div class="container">
             <div class="row">
                 @foreach ($categories as $category)
@@ -23,4 +23,4 @@
                 @endforeach
             </div>
         </div>
-@endsection
+    @endsection

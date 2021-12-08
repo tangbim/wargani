@@ -22,7 +22,7 @@
     <form class="text-white mt-3">
         <div class="mb-3">
             <label for="nameInput" class="form-label">Name</label>
-            <input type="email" class="form-control" id="nameInput" aria-describedby="emailHelp" value="{{ Auth::user()->name }}">
+            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp" value="{{ Auth::user()->name }}">
           </div>
         <div class="mb-3">
           <label for="emailInput" class="form-label">Your Email Address</label>
