@@ -1,14 +1,12 @@
 <?php
 
-use App\Models\User;
+use App\Http\Controllers\AccountController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\RegisterController;
-use App\Models\Article;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,14 +31,14 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index']);
     Route::get('/dashboard/article', [DashboardController::class, 'indexArticle']);
     Route::delete('/dashboard/article/{article:slug}', [DashboardController::class, 'destroy']);
+    Route::delete('/dashboard/user/{user:id}', [DashboardController::class, 'destroy']);
 });
 
-// Route::get('/login', [LoginController::class, 'login']);
-
-// Route::get('/register', [RegisterController::class, 'index']);
-// Route::post('/register', [RegisterController::class, 'store']);
-
-Route::get('/account', [LoginController::class, 'account']);
+Route::group(['middleware' => ['auth']], function(){
+    Route::put('/account/{user:id}/edit', [AccountController::class, 'update']);
+    Route::get('/account', [AccountController::class, 'index']);
+    Route::delete('/account/{user:id}', [AccountController::class, 'destroy']);
+});
 
 Route::post('/comment', [CommentController::class, 'store']);
 

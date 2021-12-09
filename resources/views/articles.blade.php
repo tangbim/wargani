@@ -6,10 +6,21 @@
             height: 600px !important;
             length: 1600px !important;
         }
+        @media screen and (max-width: 600px) {
+        .image-override {
+            height: 250px !important;
+            length: 1000px !important;
+            }
+        }
 
     </style>
 
     <body style="background-color:black">
+        @if(session()->has('success'))
+        <div class="alert alert-success mt-2" role="alert">
+            {{ session('success') }}
+        </div>
+        @endif
         <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
                 <div class="carousel-indicators">

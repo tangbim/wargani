@@ -73,7 +73,6 @@
                         terkini dan pastinya aktual dari seantero jagad raya</small>
                     <form class=" w-75 mx-auto" method="POST" action="{{ route('register') }}">
                         @csrf
-                        {{-- name --}}
                         <div class="form-floating">
                             <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name"
                                 placeholder="Name" required value="{{ old('name') }}">
@@ -84,13 +83,6 @@
                                 </div>
                             @enderror
                         </div>
-
-                        {{-- username --}}
-                        {{-- <div class="form-floating">
-                            <input type="text" name="username" class="form-control @error('username') is-invalid @enderror"
-                                id="username" placeholder="Username" required>
-                            <label class="text" for="username">Username</label>
-                        </div> --}}
                         <div class="form-floating">
                             <input type="email" name="email" class="form-control" id="email"
                                 placeholder="Email" required value="{{ old('email') }}">
@@ -101,8 +93,6 @@
                                 </div>
                             @enderror
                         </div>
-
-                        {{-- password --}}
                         <div class="form-floating">
                             <input type="password" name="password"
                                 class="form-control @error('password') is-invalid @enderror" id="password"

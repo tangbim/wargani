@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
-class DashboardController extends Controller
+class AccountController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,22 +15,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashindex', [
-            'title' => 'User Dashboard',
-            'users' => User::all()
-        ]);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function indexArticle()
-    {
-        return view('dasharticle', [
-            'title' => 'Articles Dashboard',
-            'articles' => Article::all()
+        return view('account', [
+            "title" => "Account",
+            //masih kosong yakkk
         ]);
     }
 
@@ -61,7 +48,7 @@ class DashboardController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user, Article $article)
+    public function show(User $user)
     {
         //
     }
@@ -72,7 +59,7 @@ class DashboardController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user, Article $article)
+    public function edit(User $user)
     {
         //
     }
@@ -84,9 +71,28 @@ class DashboardController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user, Article $article)
+    public function update(Request $request, User $user)
     {
-        //
+        if($request->newPassword){
+            $request->validate([
+                'nameInput' => ['required', 'string', 'max:255'],
+                'emailInput' => ['required'],
+                'currentPassword' => ['required','current_password'],
+                'newPassword' => ['required', 'confirmed', 'different:currentPassword']
+            ]);
+            $user->name = $request->nameInput;
+            $user->password = bcrypt($request->newPassword);
+            $user->save();
+        }else{
+            $request->validate([
+                'nameInput' => ['required', 'string', 'max:255'],
+                'emailInput' => ['required'],
+                'currentPassword' => ['required','current_password'],
+            ]);
+            $user->name = $request->nameInput;
+            $user->save();
+        }
+        return redirect('/account')->with('success', 'Your account has been updated!');
     }
 
     /**
@@ -95,21 +101,9 @@ class DashboardController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user, Article $article)
-    {
-        Article::destroy($article->id);
-        return redirect('/dashboard/article')->with('success', "Article $article->title deleted successfully!");
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy2(User $user, Article $article)
+    public function destroy(User $user)
     {
         User::destroy($user->id);
-        return redirect('/dashboard')->with('success', "User $user->name deleted successfully!");
+        return redirect('/')->with('success', "Your account has been deleted successfully");
     }
 }

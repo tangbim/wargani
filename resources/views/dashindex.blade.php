@@ -25,8 +25,13 @@
               <td>{{ $user->email }}</td>
               <td>{{ $user->is_admin == 1 ? 'Admin' : 'User' }}</td>
               <td>
-                  <a class="btn btn-primary btn-sm" href="#" role="button">View</a>
-                  <a class="btn btn-danger btn-sm" href="#" role="button">Delete</a>
+                <form action="/dashboard/user/{{ $user->id }}" method="post">
+                    @method('delete')
+                    @csrf
+                    <a class="btn btn-primary btn-sm mb-1 mb-md-0" href="/user/{{ $user->id }}"
+                        role="button">View</a>
+                    <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                </form>
               </td>
           </tr>
           @php($count++)
