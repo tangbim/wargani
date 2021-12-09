@@ -82,7 +82,7 @@
                 @foreach ($articles->skip(3) as $article)
                     <div class="col-12 col-sm-6 col-lg-4 mb-4 d-flex align-items-stretch">
                         <div class="card text-white bg-dark text-center" style="width: 20rem;">
-                            <img src="{{ $article->image }}" class="card-img-top" alt="...">
+                            <img src="{{ $article->image }}" class="card-img-top w-100" alt="..." style="max-height: 40%">
                             {{-- default image https://source.unsplash.com/1600x800/?{{ $article->category->name }} --}}
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">{{ $article->title }}</h5>
