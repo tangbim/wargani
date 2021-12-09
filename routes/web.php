@@ -31,7 +31,7 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index']);
     Route::get('/dashboard/article', [DashboardController::class, 'indexArticle']);
     Route::delete('/dashboard/article/{article:slug}', [DashboardController::class, 'destroy']);
-    Route::delete('/dashboard/user/{user:id}', [DashboardController::class, 'destroy']);
+    Route::delete('/dashboard/user/{user:id}', [DashboardController::class, 'destroy2']);
 });
 
 Route::group(['middleware' => ['auth']], function(){

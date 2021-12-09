@@ -5,7 +5,7 @@
         <h1 class="h2 text-white">Dashboard</h1>
     </div>
 
-    <h2 class="text-white my-3">User</h2>
+    <h2 class="text-white my-3">Article</h2>
     @if (session()->has('success'))
         <div class="alert alert-success" role="alert">
             {{ session('success') }}

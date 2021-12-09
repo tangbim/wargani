@@ -6,6 +6,11 @@
   </div>
 
   <h2 class="text-white my-3">User</h2>
+  @if (session()->has('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session('success') }}
+        </div>
+    @endif
   <table class="table table-dark">
       <thead>
         <tr>
